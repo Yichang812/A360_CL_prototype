@@ -1,0 +1,46 @@
+a {
+	text-decoration: none;
+}
+.panel{
+	font-family: Helvetica, Arial, Sans-Serif;
+	color:grey; 
+	background-color:#DDDDDD;
+	width:211px;
+	height:350px;
+	padding:2px;
+	border:2px;
+	border-style:ridge;
+	border-color:#E8E8E8;
+}
+.header{
+	height:12px;
+}
+.header h1{
+	font-size:12px;
+	float:left;
+}
+#iconSearch{
+	position:absolute;
+	top:10px;
+	left:165px;
+}
+#iconGear{
+	position:absolute;
+	top:14px;
+	left:187px;
+}
+#iconCaretUp{
+	position:absolute;
+	top:15px;
+	left:211px;
+}
+.display-area{
+	width:201px;
+	height:310px;
+	margin-left: 2px;
+	margin-top:15px;
+	background-color: white;
+	border:2px;
+	border-style:ridge;
+	border-color:#E8E8E8;
+}
