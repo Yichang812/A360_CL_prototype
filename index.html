@@ -1,24 +1,20 @@
 <html>
 <head>
 	<title>Content Library</title>
-	<link rel="stylesheet" type="text/css" href="css/index.css"/>
-	<link rel="stylesheet" type="text/css" href="css/icono.min.css"/>
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<link rel="stylesheet" type="text/css" href="css/hamburger.css"/>
-	<script src="js/modernizr.custom.js"></script>
-</head> 
+</head>
+
 <body>
 	<div class="panel">
 		<div class="header">
 			<h1>CONTENT LIBRARY</h1>
-			<span class="icono-search" id="iconSearch"></span>
-			<span class="icono-gear" id="iconGear"></span>
-			<span class="icono-caretUp" id="iconCaretUp"></span>
+			<span class="icon-search" id="iconSearch"></span>
+			<span class="icon-setting" id="iconSetting"></span>
+			<span class="icon-caretUp" id="iconCaretUp"></span>
 		</div>
 		<div class="display-area">
 	
-			<div class="cbp-spmenu-push">
-				<nav class="cbp-spmenu cbp-spmenu-vertical" id="cbp-spmenu-s2">
+			<div class="side-menu-push">
+				<nav class="side-menu-list" id="category-list">
 					<h2>Category</h2>
 						<a href="#">Architecture</a>
 						<a href="#">Electrical</a>
@@ -28,42 +24,18 @@
 						<a href="#">Mics.</a>
 				</nav>
 	
-				<div id="showRightPush"><span class="iconHamburger"></span></div>
+				<span class="icon-hamburger" id="iconHamburger"></span>
 			</div>
 		</div>
 	</div>
 
-
-
-	<script src="js/classie.js"></script>
-		<script>
-			var menuRight = document.getElementById( 'cbp-spmenu-s2' ),
-				showRightPush = document.getElementById( 'showRightPush' ),
-				body = document.querySelector('div.cbp-spmenu-push');
-
-			
-			showRightPush.onclick = function() {
-				classie.toggle( this, 'active' );
-				classie.toggle( body, 'cbp-spmenu-push-toleft' );
-				classie.toggle( menuRight, 'cbp-spmenu-open' );
-				disableOther( 'showRightPush' );
-				  				console.log(1);
-			};
-
-			function disableOther( button ) {
-				
-				if( button !== 'showRightPush' ) {
-					classie.toggle( showRightPush, 'disabled' );
-				}
-			}
-			var menuSecond = document.querySelector('span.iconHamburger');
-
-			function toggleMenuSecond () {
-  				menuSecond.classList.toggle('close');
-			}
-
-			menuSecond.addEventListener('click', toggleMenuSecond);
-		</script>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/icons.css"/>
+	<link rel="stylesheet" type="text/css" href="css/sidemenu.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu-collapsed.css"/>
+	<script src="js/classie.js"></script> 
+	<script src="js/sidemenu.js"></script>
+	<script src="js/icons.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,57 @@
+/* General styles for all menus */
+.side-menu-list{
+	background: grey;
+	position: relative;
+	left:201px;
+	width: 100px;
+	height: 310px;
+	z-index:1000;
+}
+
+.display-area{
+	overflow-x: hidden;
+}
+
+.side-menu-push h2 {
+	color: #DDDDDD;
+	font-size: 12px;
+	margin: 0;
+	background: #3A3A3A;
+}
+
+.side-menu-list a {
+	display: block;
+	color: white;
+	font-size: 10px;
+	border-bottom: 1px solid #3A3A3A;
+	padding: 1em;
+}
+
+.side-menu-list a:hover {
+	background: grey;
+}
+
+.side-menu-list a:active {
+	background: #3A3A3A;
+	color: white;
+}
+
+
+/* Push classes applied to the body */
+
+
+.side-menu-push {
+	position: relative;
+	left: 0;
+}
+.side-menu-push-toleft {
+	left: -100px;
+}
+
+/* Transitions */
+
+.side-menu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}

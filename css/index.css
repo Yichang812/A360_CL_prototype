@@ -19,21 +19,6 @@ a {
 	font-size:12px;
 	float:left;
 }
-#iconSearch{
-	position:absolute;
-	top:10px;
-	left:165px;
-}
-#iconGear{
-	position:absolute;
-	top:14px;
-	left:187px;
-}
-#iconCaretUp{
-	position:absolute;
-	top:15px;
-	left:211px;
-}
 .display-area{
 	width:201px;
 	height:310px;
@@ -43,4 +28,24 @@ a {
 	border:2px;
 	border-style:ridge;
 	border-color:#E8E8E8;
+}
+#iconSearch{
+	position:absolute;
+	top:14px;
+	left:171px;
+}
+#iconSetting{
+	position:absolute;
+	top:14px;
+	left:191px;
+}
+#iconCaretUp{
+	position:absolute;
+	top:14px;
+	left:211px;
+}
+#iconHamburger{
+	position: absolute;
+  	right: 5px;
+  	top: 0px;
 }

@@ -1,0 +1,60 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+
+/*caret Up Icon: expand and collapse*/
+.icon-caretUp{
+	font-family: 'entypo', sans-serif;
+  	font-size: 1em
+	display: inline;
+  	transition: transform .3s ease;
+ 	transform-origin: 50% 50%;
+}
+.icon-caretUp:before{
+	content:"\e75f";
+}
+.icon-caretUp.collapsed{
+	transform: rotate(-180deg);
+}
+.icon-caretUp.collapsed:before{
+	content:"\e75c";
+} 
+
+
+/*hamburger Icon*/
+.icon-hamburger {
+	font-family: 'entypo', sans-serif;
+  	font-size: 1.5em;
+  	display: block;
+  
+  	transition: transform .3s ease;
+  	transform-origin: 25% 50%;
+}
+.icon-hamburger:before {
+  	content: "\2630";
+}
+.icon-hamburger.close {
+ 	transform: rotate(-180deg);
+}
+.icon-hamburger.close:before {
+  	content: "\2715";
+}
+
+
+/*search Icon*/
+.icon-search{
+	font-family: 'entypo', sans-serif;
+  	font-size: 1em;
+}
+.icon-search:before{
+	content:"\1f50d";
+}
+
+
+/*setting Icon*/
+.icon-setting{
+	font-family: 'entypo', sans-serif;
+  	font-size: 1em;
+}	
+.icon-setting:before{
+	content:"\2699";
+}
