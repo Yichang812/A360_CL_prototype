@@ -26,14 +26,16 @@
   	font-size: 1.5em;
   	display: block;
   
-  	transition: transform .3s ease;
+  	transition: transform 0.3s ease;
+
   	transform-origin: 25% 50%;
 }
 .icon-hamburger:before {
   	content: "\2630";
 }
 .icon-hamburger.close {
- 	transform: rotate(-180deg);
+ 	transform: translateX(-100px) rotate(-180deg);
+
 }
 .icon-hamburger.close:before {
   	content: "\2715";
