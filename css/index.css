@@ -1,6 +1,16 @@
+body {
+  background: url(../Editor_notop_newicons.png);
+  background-repeat: no-repeat;
+}
 a {
 	text-decoration: none;
 }
+.container {
+  position: relative;
+  width: 1268px;
+  height: 620px;
+}
+
 .panel{
 	font-family: Helvetica, Arial, Sans-Serif;
 	color:grey; 
@@ -11,6 +21,9 @@ a {
 	border:2px;
 	border-style:ridge;
 	border-color:#E8E8E8;
+	position: absolute;
+  	top: 47px;
+  	right:0px;
 }
 .header{
 	height:12px;
@@ -31,18 +44,18 @@ a {
 }
 #iconSearch{
 	position:absolute;
-	top:14px;
-	left:171px;
+	top:8px;
+	right:36px;
 }
 #iconSetting{
 	position:absolute;
-	top:14px;
-	left:191px;
+	top:8px;
+	right:20px;
 }
 #iconCaretUp{
 	position:absolute;
-	top:14px;
-	left:211px;
+	top:8px;
+	right:8px;
 }
 #iconHamburger{
 	position: absolute;
