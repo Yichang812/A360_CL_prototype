@@ -1,5 +1,4 @@
-var menuRight = document.getElementById( 'category-list' ),
-	hamburgerIcon = document.getElementById( 'iconHamburger' ),
+var hamburgerIcon = document.getElementById( 'iconHamburger' ),
 	body = document.querySelector('div.side-menu-push');
 
 			
