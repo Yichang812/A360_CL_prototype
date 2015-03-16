@@ -1,5 +1,5 @@
 body {
-  background: url(../Editor_notop_newicons.png);
+  background: url(../images/Editor_notop_newicons.png);
   background-repeat: no-repeat;
 }
 a {
@@ -16,7 +16,7 @@ a {
 	color:grey; 
 	background-color:#DDDDDD;
 	width:211px;
-	height:350px;
+	height:306px;
 	padding:2px;
 	border:2px;
 	border-style:ridge;
@@ -34,13 +34,21 @@ a {
 }
 .display-area{
 	width:201px;
-	height:310px;
+	height:266px;
 	margin-left: 2px;
 	margin-top:15px;
-	background-color: white;
+	background-image:url(../images/blocks.png);
+	background-repeat: no-repeat;
 	border:2px;
 	border-style:ridge;
 	border-color:#E8E8E8;
+	position: relative;
+
+	overflow-y: scroll;
+}
+.display-area h2{
+	font-size: 10px;
+	z-index: 1000;
 }
 #iconSearch{
 	position:absolute;
@@ -60,5 +68,26 @@ a {
 #iconHamburger{
 	position: absolute;
   	right: 5px;
-  	top: 0px;
+  	top: -25px;
+}
+
+.force-overflow{
+	min-height: 400px;
+}
+
+.display-area::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #E8E8E8;
+}
+
+.display-area::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #E8E8E8;
+}
+
+.display-area::-webkit-scrollbar-thumb
+{
+	background-color: grey;
 }
