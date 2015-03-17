@@ -28,11 +28,11 @@
 }
 
 .side-menu-list a:hover {
-	background: grey;
+	background: #3A3A3A;
 }
 
 .side-menu-list a:active {
-	background: #3A3A3A;
+	background: black;
 	color: white;
 }
 
