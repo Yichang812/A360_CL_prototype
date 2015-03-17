@@ -24,10 +24,9 @@ a {
 	position: relative;
   	top: 47px;
   	left:1048px;
+  	overflow-y:hidden;
 }
-.header{
-	height:12px;
-}
+
 .header h1{
 	font-size:12px;
 	float:left;

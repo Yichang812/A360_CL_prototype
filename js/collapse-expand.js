@@ -1,22 +1,27 @@
-var caretUpIcon = document.getElementById('iconCaretUp');
-	//pallet = document.getElementByClassName('pallet');
+document.getElementById('iconCaretUp').onclick = function(){
+	var settingIcon = document.getElementById('iconSetting');
+	var searchIcon = document.getElementById('iconSearch');
+	var pallet = document.getElementById('pallet');
+	hideIcon(settingIcon);
+	hideIcon(searchIcon);
+	collapsePallet(pallet);
 
-caretUpIcon.onclick = function(){
-	if(document.getElementById('iconSetting').style.display=='none'){
-		document.getElementById('iconSetting').style.display='inline';
-		document.getElementById('iconSearch').style.display='inline';
-	}else{
-		document.getElementById('iconSetting').style.display='none';
-		document.getElementById('iconSearch').style.display='none';
-	}
-	
 };
 
-// function hideIcon(icon){
-// 	if(icon.style.display=='none'){
-// 		icon.style.display=='block';
-// 		console.log("searchIcon"+searchIcon.style.display);
-// 	}else{
-// 		icon.style.display=='none';
-// 	}
-// }
+function hideIcon(icon){
+	if(icon.style.display == 'none'){
+		icon.style.display ='inline';
+	}else{
+		icon.style.display ='none';
+	}
+}
+function collapsePallet(pallet){
+	if(pallet.style.height=='28px'){
+		//expand the pallet
+		pallet.style.height ='306px';
+	}else{
+		//collapse the pallet
+		pallet.style.height = '28px';
+	}
+
+}
