@@ -6,14 +6,14 @@
 	font-family: 'entypo', sans-serif;
   	font-size: 1em
 	display: inline;
-  	transition: transform .3s ease;
+  	transition: transform 0.3s ease;
  	transform-origin: 50% 50%;
 }
 .icon-caretUp:before{
 	content:"\e75f";
 }
 .icon-caretUp.collapsed{
-	transform: rotate(-180deg);
+	transform: rotate(0deg);
 }
 .icon-caretUp.collapsed:before{
 	content:"\e75c";
@@ -23,10 +23,12 @@
 /*hamburger Icon*/
 .icon-hamburger {
 	font-family: 'entypo', sans-serif;
-  	font-size: 1.5em;
+  	font-size: 1.3em;
   	display: block;
   
   	transition: transform 0.3s ease;
+  	-webkit-transition: transform 0.3s ease;
+	-moz-transition: transform 0.3s ease;
 
   	transform-origin: 25% 50%;
 }
@@ -35,6 +37,8 @@
 }
 .icon-hamburger.close {
  	transform: translateX(-100px) rotate(-180deg);
+ 	-webkit-transform: translateX(-100px) rotate(-180deg);
+ 	-moz-transform: translateX(-100px) rotate(-180deg);
 
 }
 .icon-hamburger.close:before {
@@ -46,7 +50,7 @@
 .icon-search{
 	font-family: 'entypo', sans-serif;
   	font-size: 1em;
-}
+ }
 .icon-search:before{
 	content:"\1f50d";
 }
