@@ -31,7 +31,7 @@
 	z-index: 1;
 }
 
-.searchFilter{
+.searchBar{
 	height:25px;
 	width: 160px;
 	position:relative;
@@ -61,7 +61,9 @@
    	border: inset 1px #0696D7;
   }
 
-.searchFilter select{
+/*category selector*/
+
+.searchBar select{
 	height:25px;
 	width:70px;
 	
@@ -78,7 +80,7 @@
 	box-shadow: -1px 2px 1px 0px rgba(58, 58, 58, 0.81);
 }
 
-.searchFilter option{
+.searchBar option{
 	background-color: white;
 	color: #3A3A3A;
 }

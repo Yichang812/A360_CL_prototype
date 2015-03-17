@@ -27,13 +27,13 @@ function hideShow(icon){
 	}
 }
 function collapseExpand(pallet){
-	if(pallet.style.height=='25px'){
+	if(pallet.style.height=='24px'){
 		//expand the pallet
 		pallet.style.height ='306px';
 		isCollapsed = false;
 	}else{
 		//collapse the pallet
-		pallet.style.height = '25px';
+		pallet.style.height = '24px';
 		isCollapsed = true;
 	}
 
