@@ -4,14 +4,24 @@
 	</head>
 	<body>
 		<div class="container">
+
 			<div class="pallet" id="pallet">
 				<div class="header">
 					<h1>CONTENT LIBRARY</h1>
-					
 					<span class="icon-search" id="iconSearch"></span>
+					<div class="bubble" id="searchBubble">
+						<div class="searchFilter">
+						<select>
+							<option value="all">All</option>
+							<option value="architecture">Architecture</option>
+							<option value="electrical">Electrical</option>
+							<option value="furniture">Furniture</option>
+						</select>
+						<input type="text" placeholder="" class="search_box">
+						</div>
+					</div>
 					<span class="icon-setting" id="iconSetting"></span>
 					<span class="icon-caretUp" id="iconCaretUp"></span>
-
 				</div>
 				<div class="display-area">
 					<div class="force-overflow">
@@ -38,11 +48,12 @@
 		</div>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="css/icons.css"/>
-		<link rel="stylesheet" type="text/css" href="css/sidemenu.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidemenu.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bubble.css"/>
 		<script src="js/classie.js"></script>
 		<script src="js/sidemenu.js"></script>
-		<script src="js/icons.js"></script>
-		<script src="js/collapse-expand.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/icon_transform.js"></script>
+		<script src="js/headerIcons.js"></script>
+		
 	</body>
 </html>
