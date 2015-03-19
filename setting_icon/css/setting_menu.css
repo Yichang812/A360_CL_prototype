@@ -1,0 +1,89 @@
+button{
+	background-color: transparent;
+	border:0;
+	color:grey;
+	height: 20px;
+}
+.settingMenu ul {
+	padding:0;
+	margin:0;
+	list-style: none;
+	position: relative;
+	/*-webkit-box-shadow: -1px 2px 5px 0px rgba(58, 58, 58, 0.81);
+	-moz-box-shadow: -1px 2px 5px 0px rgba(58, 58, 58, 0.81);
+	box-shadow: -1px 2px 5px 0px rgba(58, 58, 58, 0.81);*/
+	}
+	
+.settingMenu ul li ul li {
+	background-color: white;
+	height:25px;
+	width: 100px;
+	border:0;
+	border-bottom: solid 1px grey;
+	z-index: 1001;
+	}
+
+.settingMenu a {
+	display:block;
+	padding:0 10px;	
+	color:#3A3A3A;
+	font-size:10px;
+	line-height: 30px;
+	text-decoration:none;
+}
+
+.settingMenu a:hover { 
+	background-color: #0696D7; 
+	color:white;
+}
+
+
+	
+/* Fisrt Tier Dropdown */
+.settingMenu ul ul li {
+	width:100px;
+	float:none;
+	display:block;
+	position: relative;
+	left:120;
+	top:30;
+}
+
+ /*Second, Third and more Tiers	*/
+.settingMenu ul ul ul li {
+	position: relative;
+	top:-14px; 
+	left:70px;
+}
+
+
+/*Display dropdown menu by clicking setting icon*/
+#iconSetting:hover,
+#iconSetting:focus {
+    outline: 0;
+    background-color: rgba(6,150,215,0.3);
+}
+
+.tier1_menu {
+    display: none;
+    /*display: list-item;*/
+    position: relative;
+    padding: 10px;
+}
+.settingMenu ul ul li > ul{
+    display: none;
+    /*display: list-item;*/
+    position: relative;
+    padding: 10px;
+}
+#iconSetting:focus + .tier1_menu:not(.tier2_menu),
+.tier1_menu:hover:not(.tier2_menu) {
+    display: list-item;
+}
+
+/*hover items in tier1 menu to show its options*/
+
+
+.settingMenu ul ul li:hover > ul{
+	display: list-item;
+}

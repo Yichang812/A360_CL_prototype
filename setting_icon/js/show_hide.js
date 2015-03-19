@@ -1,22 +1,22 @@
 var isCollapsed;
 
-// document.getElementById('iconCaretUp').onclick = function(){
-// 	var settingIcon = document.getElementById('iconSetting');
-// 	var searchIcon = document.getElementById('iconSearch');
-// 	var pallet = document.getElementById('pallet');
-// 	hideShow(settingIcon);
-// 	hideShow(searchIcon);
-// 	collapseExpand(pallet);
+document.getElementById('iconCaretUp').onclick = function(){
+	var settingIcon = document.getElementById('iconSetting');
+	var searchIcon = document.getElementById('iconSearch');
+	var pallet = document.getElementById('pallet');
+	hideShow(settingIcon);
+	hideShow(searchIcon);
+	collapseExpand(pallet);
 
-// };
-document.getElementById('iconSetting').onclick = function(){
-	var settingMenu = document.getElementById('level_1');
-	if(settingMenu.style.display == 'none'){
-		settingMenu.style.display ='inherit';
-	}else{
-		settingMenu.style.display ='none';
-	}
 };
+
+
+// document.getElementById('iconSetting').onclick = function(){
+// 	var tier1_menu = document.getElementById('tier1_menu');
+// 	//var tier1 = document.querySelectorAll('.tier1');
+// 	hideShowBlock(tier1_menu);
+// 	//hideShowBlock(tier1);
+// };
 
 
 function hideShow(icon){
@@ -26,6 +26,15 @@ function hideShow(icon){
 		icon.style.display ='none';
 	}
 }
+
+// function hideShowBlock(icon){
+// 	if(icon.style.display == 'none'){
+// 		icon.style.display ='block';
+// 	}else{
+// 		icon.style.display ='none';
+// 	}
+// }
+
 function collapseExpand(pallet){
 	if(pallet.style.height=='24px'){
 		//expand the pallet
