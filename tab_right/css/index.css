@@ -21,13 +21,13 @@ a {
 }
 
 .pallet{
-	background-color:#DDDDDD;
+	background-color:rgba(0,0,0,0.1);
 	width:211px;
 	height:306px;
 	padding:2px;
 
-	border:2px solid #CCCCCC;
-	border-bottom:5px ridge #DDDDDD;
+	border:2px solid rgba(0,0,0,0.2);
+	border-bottom:5px ridge rgba(0,0,0,0.1);
 
 	position: relative;
   	top: 47px;
@@ -39,7 +39,7 @@ a {
 	width:211px;
 	padding:auto 5px auto 5px;
 	position:relative;
-	color: #555555;
+	color: rgba(0,0,0,0.7);
 }
 .display-area{
 	height:400px;
@@ -49,7 +49,7 @@ a {
 	height:270px;
 	overflow-y:scroll;
 	background-color: white;
-	border:2px solid #CCCCCC;
+	border:2px solid rgba(0,0,0,0.2);
 	position: relative;
 	left: 3px;
 }
@@ -58,14 +58,14 @@ a {
 	background-color: transparent;
 }
 #scrollbar::-webkit-scrollbar-thumb{
-	background-color:#CCCCCC;
+	background-color:rgba(0,0,0,0.2);
 	border-radius:2.5px;
 }
 #scrollbar::-webkit-scrollbar-thumb:hover{
-	background-color: #555555;
+	background-color: rgba(0,0,0,0.7);
 }
 #scrollbar::-webkit-scrollbar-thumb:active{
-	background-color: #555555;
+	background-color: rgba(0,0,0,0.7);
 }
 
 /*header*/
@@ -80,7 +80,7 @@ a {
 	position: absolute;
 	top: 2.5px;
 	left: 4.5px;
-	color:#CCCCCC;
+	color:white;
 }
 
 
@@ -91,7 +91,7 @@ a {
     border: 0px;
 	width: 25px;
 	height:25px;
-	background-color:rgba(0,0,0,0.6);
+	background-color:rgba(0,0,0,0.1);
 	position: absolute;
 	right:0px;
 	top:0px;
@@ -100,9 +100,9 @@ a {
 
 #searchBar{
 	display: none;
-	width:170px;
+	width:171px;
 	height: 25px;
-	background-color:rgba(0,0,0,0.6);
+	background-color:rgba(0,0,0,0.4);
 	position: absolute;
 	left:25px;
 	top:0px;
@@ -116,7 +116,7 @@ a {
     border: 0px;
     width: 25px;
     height: 55px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
     color:white;
     z-index: 1;
     position: absolute;
@@ -128,13 +128,13 @@ a {
 	display: none;
 	width:93px;
 	height: 270px;
-	background-color:rgba(0,0,0,0.6);
+	background-color:rgba(0,0,0,0.4);
 	position: absolute;
 	left:103px;
 	top:25px;
 	z-index: 1;
 }
 
-.menu-tab,.search-tab,#searchBar,#sideMenu:hover{
-	background-color: rgba(0,0,0,0.8);
+.menu-tab:hover,.search-tab:hover,#searchBar:hover,#sideMenu:hover{
+	background-color: rgba(0,0,0,0.7);
 }
