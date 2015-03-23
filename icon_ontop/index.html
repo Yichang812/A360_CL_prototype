@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider From Top</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="pallet">
+
+			<div class="header">
+				<span id="header">Content Library</span>
+				<span class="entypo-search" id="searchIcon"></span>
+				<span class="entypo-menu" id="menuIcon"></span>
+			</div><!--header-->
+			<div class="search-bar" id="searchBar"></div>
+			<div class="side-menu" id="sideMenu"></div>
+
+			<div class="scrollbar" id="scrollbar">
+				<div class="display-area">
+				</div><!--dispaly_area-->
+			</div><!--scrollbar-->
+
+
+		</div><!--pallet-->
+	</div><!--container-->
+
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$("#searchIcon").click(function(){
+			$("#searchBar").toggle('slide',{direction:'up'},200);
+		});
+	});
+	$(document).ready(function(){
+		$("#menuIcon").click(function(){
+			$("#sideMenu").toggle('slide',{direction:'right'},200);
+		});
+	});
+
+	</script>
+</body>
+
+</html>

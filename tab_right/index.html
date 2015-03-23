@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider From Top</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="pallet">
+
+			<div class="header">
+				<span id="header">Content Library</span>
+			</div><!--header-->
+			
+			<div class="scrollbar" id="scrollbar">
+				<div class="display-area">
+					
+					<div class="menu-tab"></div>
+					<div class="search-tab"><span class="entypo-search" id="searchIcon"></span></div>
+					<div class="search-bar" id="searchBar"></div>
+					<div class="side-menu" id="sideMenu"></div>
+				</div><!--dispaly_area-->
+			</div><!--scrollbar-->
+
+		</div><!--pallet-->
+	</div><!--container-->
+
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('.search-tab').click(function(){
+			$('#searchBar').toggle('slide',{direction:'right'},200);
+			if($('.search-tab').css('right')==='0px'){
+				$('.search-tab').animate({right:'170px'},200);
+			}else{
+				$('.search-tab').animate({right:'0px'},200);
+			}
+			
+		});
+	});
+	$(document).ready(function(){
+		$('.menu-tab').click(function(){
+			$('#sideMenu').toggle('slide',{direction:'right'},200);
+			if($('.menu-tab').css('right')==='0px'){
+				$('.menu-tab').animate({right:'93px'},200);
+			}else{
+				$('.menu-tab').animate({right:'0px'},200);
+			}
+		});
+	});
+
+	</script>
+</body>
+
+</html>
