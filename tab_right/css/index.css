@@ -21,13 +21,12 @@ a {
 }
 
 .pallet{
-	background-color:rgba(0,0,0,0.1);
+	background-color:#E5E5E5;
 	width:211px;
 	height:306px;
 	padding:2px;
 
-	border:2px solid rgba(0,0,0,0.2);
-	border-bottom:5px ridge rgba(0,0,0,0.1);
+	border:2px solid #CCCCCC;
 
 	position: relative;
   	top: 47px;
@@ -39,7 +38,7 @@ a {
 	width:211px;
 	padding:auto 5px auto 5px;
 	position:relative;
-	color: rgba(0,0,0,0.7);
+	color: #666666;
 }
 .display-area{
 	height:400px;
@@ -49,7 +48,7 @@ a {
 	height:270px;
 	overflow-y:scroll;
 	background-color: white;
-	border:2px solid rgba(0,0,0,0.2);
+	border:2px solid #CCCCCC;
 	position: relative;
 	left: 3px;
 }
@@ -58,14 +57,14 @@ a {
 	background-color: transparent;
 }
 #scrollbar::-webkit-scrollbar-thumb{
-	background-color:rgba(0,0,0,0.2);
+	background-color:#CCCCCC;
 	border-radius:2.5px;
 }
 #scrollbar::-webkit-scrollbar-thumb:hover{
-	background-color: rgba(0,0,0,0.7);
+	background-color: #666666;
 }
 #scrollbar::-webkit-scrollbar-thumb:active{
-	background-color: rgba(0,0,0,0.7);
+	background-color: #666666;
 }
 
 /*header*/
@@ -91,7 +90,7 @@ a {
     border: 0px;
 	width: 25px;
 	height:25px;
-	background-color:rgba(0,0,0,0.1);
+	background-color:#999999;
 	position: absolute;
 	right:0px;
 	top:0px;
@@ -102,13 +101,20 @@ a {
 	display: none;
 	width:171px;
 	height: 25px;
-	background-color:rgba(0,0,0,0.4);
+	background-color:#999999;
 	position: absolute;
 	left:25px;
 	top:0px;
 	z-index: 1;
 }
 
+.vertical-text {
+	transform: rotate(-90deg);
+  	transform-origin: left top 0;
+  	position: absolute;
+  	top: 48px;
+  	left: 5px;
+}
 .menu-tab {
     border-radius: 10px 0px 0px 10px;
     -moz-border-radius: 10px 0px 0px 10px;
@@ -116,7 +122,7 @@ a {
     border: 0px;
     width: 25px;
     height: 55px;
-    background-color: rgba(0,0,0,0.4);
+    background-color: #999999;
     color:white;
     z-index: 1;
     position: absolute;
@@ -128,13 +134,13 @@ a {
 	display: none;
 	width:93px;
 	height: 270px;
-	background-color:rgba(0,0,0,0.4);
+	background-color:#999999;
 	position: absolute;
 	left:103px;
 	top:25px;
 	z-index: 1;
 }
 
-.menu-tab:hover,.search-tab:hover,#searchBar:hover,#sideMenu:hover{
+/*.menu-tab:hover,.search-tab:hover,#searchBar:hover,#sideMenu:hover{
 	background-color: rgba(0,0,0,0.7);
-}
+}*/
