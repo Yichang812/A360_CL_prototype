@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slider From Top</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="pallet">
+			<div class="header">
+				<span id="pallet-name">Content Library</span>
+
+			</div><!--header-->
+
+			<div class="search-bar" id="searchBar">
+				<input class="search-box" type="text" placeholder="Search" onfocus="this.placeholder=''" onblur="this.placeholder='Search'">
+			</div>
+			<div class="side-menu">
+				<nav>
+					<div class="side-menu-title">Category</div>
+					<a href="#">Architecture</a>
+					<a href="#">Electrical</a>
+					<a href="#">Furniture</a>
+					<a href="#">Landscaping</a>
+					<a href="#">Symbols</a>
+					<a href="#">Mics.</a>
+					<a href="#">Favorites.</a>
+					<a href="#" class="small">Current Drawing</a>
+					<div class="side-menu-title">Settings</div>
+				</nav>
+			</div>
+
+
+			<div class="scrollbar" id="scrollbar">
+				<div class="display-area">
+					<div class="category-name">Favorites
+                        <span class="entypo-search" id="searchIcon"></span>
+				        <span class="entypo-menu" id="menuIcon"></span>
+                    </div>
+					<div class="block-thumbnail">
+						<img src="images/tree_1.png" alt="tree 1"/>
+						<div class="block-name">tree 1</div>
+					</div>
+					<div class="block-thumbnail">
+						<img src="images/tree_2.png" alt="tree 2"/>
+						<div class="block-name">tree 2</div>
+					</div>
+					<div class="block-thumbnail">
+						<img src="images/tree_3.png" alt="tree 1"/>
+						<div class="block-name">tree 3</div>
+					</div>
+					<div class="block-thumbnail">
+						<img src="images/tree_4.png" alt="tree 2"/>
+						<div class="block-name">tree 4</div>
+					</div>
+					<div class="block-thumbnail">
+						<img src="images/tree_5.png" alt="tree 5"/>
+						<div class="block-name">tree 5</div>
+					</div>
+				</div><!--dispaly_area-->
+			</div><!--scrollbar-->
+
+
+	</div><!--pallet-->
+	</div><!--container-->
+
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.contextMenu.css">
+
+<!-- import libraries -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.contextMenu.js"></script>
+	<script src="js/jquery.ui.position.js"></script>
+
+	<script src="js/index.js"></script>
+	<script src="js/right-click.js"></script>
+
+</body>
+
+</html>
