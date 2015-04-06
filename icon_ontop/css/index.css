@@ -17,7 +17,7 @@ light cyan: #00bff3;
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 *{
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 }
 /* entypo */
 [class*="entypo-"]:before {
@@ -68,7 +68,7 @@ a {
 	width:201px;
 	height:270px;
 	overflow-y:scroll;
-	background-color: transparent;
+	background-color: white;
 	border:2px solid #CCCCCC;
 	position: relative;
 	left: 3px;
@@ -101,14 +101,14 @@ a {
 .entypo-search{
 	font-size: 17px;
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	right: 21px;
 }
 /*menu icon*/
 .entypo-menu{
 	font-size: 17px;
 	position: absolute;
-	top: 4px;
+	top: 2px;
 	right:7px;
 }
 .entypo-search:hover,.entypo-menu:hover{
@@ -127,7 +127,7 @@ a {
 	background-color:#999999;
 	position: absolute;
 	left:7px;
-	top:29px;
+	top:49px;
 	z-index: 2;
 }
 
@@ -173,11 +173,11 @@ a {
 .side-menu{
 	display: none;
 	width:100px;
-	height: 270px;
+	height: 250px;
 	background-color:#999999;
 	position: absolute;
-	left:106px;
-	top:29px;
+	left:103px;
+	top:49px;
 	z-index: 2;
 	font-size: 12px;
 	color:white;
