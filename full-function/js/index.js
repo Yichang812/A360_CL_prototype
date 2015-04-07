@@ -1,28 +1,42 @@
-// the search bar slide down or collapse up while clicking search icon 
+// the search bar slide down or collapse up while clicking search icon
 $(document).ready(function(){
-	$('#searchIcon').click(function(){
-		$('.search-bar').toggle('slide',{direction:'up'},200);
-		if($('.side-menu').is(':visible')){
-			$('.side-menu').toggle('slide',{direction:'right'},200);
-		}
-		
-	});
-});
 
-// the side menu slide to left or back while clicking hamburger menu icon
-$(document).ready(function(){
-	$('#menuIcon').click(function(){
-		$('.side-menu').toggle('slide',{direction:'right'},200);
-		if($('.search-bar').is(':visible')){
-			$('.search-bar').toggle('slide',{direction:'up'},200);
+	//the search bar slide left or back while clicking search icon
+	$('#searchIcon , #closeIcon').click(function(){
+		if($('.search-bar').position().left > 0) {
+			$('.search-bar').animate({left:'0',backgroundColor:'#d3e5f2'},200);
+			$('#searchIcon , #closeIcon').animate({color:'#217cbc'},200);
+		}else{
+			$('.search-bar').animate({left:'181',backgroundColor:'white'},200);
+			$('#searchIcon , #closeIcon').animate({color:'#333'},200);
 		}
 	});
-});
 
 
-$(document).ready(function(){
-	$('nav').children('a').click(function(){
+	// the side menu slide down or back while clicking hamburger menu icon
+	// the toggle function used here is from 'jquery ui' library
+$('#menuIcon').click(function(){
+		$('.side-menu').toggle('slide',{direction:'up'},200,sidemenuColor);
+	});
+
+	//change the name of current view when user selected a category
+	$('nav').children('a,div').click(function(){
 		var category = $(this).text();
-		$('.category-name').text(category);//change the category title
+		$('.current-view').text(category);
+		$('.side-menu').toggle('slide',{direction:'up'},200,sidemenuColor);
 	});
+
 });
+
+//if the side menu is shown, set the background color to be darker and the subheader to be blue
+var sidemenuColor = function(){
+	if($('.side-menu').is(':visible')){
+		$('.shadow').show(150,function(){
+			$(this).animate({backgroundColor:'rgba(0,0,0,0.2)'})
+		});
+		$('.subheader').animate({backgroundColor:'#d3e5f2'});
+	}else{
+		$('.subheader').animate({backgroundColor:'white'});
+		$('.shadow').hide();
+	}
+};
