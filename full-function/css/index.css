@@ -7,8 +7,8 @@ blue:       #217cbc
 */
 
 body {
-  /*background: url(../images/Editor_notop_newicons.png);
-  background-repeat: no-repeat;*/
+  background: url(../images/Editor_notop_newicons.png);
+  background-repeat: no-repeat;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #333;
 }
@@ -36,11 +36,11 @@ a {
 .border{
 	border-top: 1px solid #eee;
 }
-/*.container {
+.container {
 	position: relative;
   width: 1268px;
  	height: 620px;
-}*/
+}
 
 /*content library*/
 .pallet{
@@ -50,10 +50,9 @@ a {
 	padding:2px;
 	border:1px solid #d5d5d5;
 	position: relative;
-  	top: 47px;
-  	/*left:1048px;*/
-		left: 50px;
-  	overflow-y:hidden;
+  left:1048px;
+	top: 47px;
+  overflow-y:hidden;
 }
 .header{
 	height:25px;
