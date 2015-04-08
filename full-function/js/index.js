@@ -40,3 +40,13 @@ var sidemenuColor = function(){
 		$('.shadow').hide();
 	}
 };
+
+
+//hightlight current view in the side menu
+
+// var category = $('nav').children('a,div');
+// for(var i = 0; i<category.length ; i++){
+// 	if (category[i].text()==$('.current-view').text()){
+// 		category[i].css('backgroundColor':'#d3e5f2');
+// 	}
+// }

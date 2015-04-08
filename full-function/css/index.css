@@ -2,8 +2,8 @@
 words:      #333
 background: #eee
 border:     #d5d5d5
-menu:       #e4e4e4;
 blue:       #217cbc
+light blue: #d3e5f2
 */
 
 body {
@@ -122,10 +122,10 @@ a {
 	font-size: 12px;
 }
 .side-menu a:hover{
-	background-color: #d5d5d5;
+	background-color: #d3e5f2;
 }
 .side-menu a:active{
-	background-color: #333;
+	background-color: #217cbc;
 }
 
 /*display-area*/
@@ -158,22 +158,15 @@ a {
 #menuIcon{
   left:3px;
 }
-/*.block-panel{
-  width:90px;
-  height:90px;
-  background-color:white;
-  margin:2px;
-  float:left;
-}*/
 
 .block-thumbnail{
 	height: 68px;
-	margin:1px;
+	margin:2px;
 	background-color:white;
 	border:1px solid transparent;
 }
 .block-thumbnail:hover{
-	border: 1px solid #CCCCCC;
+	border: 1px solid #d5d5d5;
 }
 .block-thumbnail img{
 	float: left;

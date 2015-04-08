@@ -22,8 +22,8 @@
     position: absolute;
     list-style-type: none;
 
-    border: 1px solid #DDD;
-    background: #EEE;
+    border: 1px solid #d5d5d5;
+    background: white;
 
     -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
        -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -37,7 +37,7 @@
 
 .context-menu-item {
     padding: 3px 3px 3px 32px;
-    background-color: #EEE;
+    background-color: white;
     position: relative;
     -webkit-user-select: none;
        -moz-user-select: -moz-none;
@@ -47,7 +47,7 @@
 
 .context-menu-separator {
     padding-bottom:0;
-    border-bottom: 1px solid #DDD;
+    border-bottom: 1px solid #d5d5d5;
 }
 
 .context-menu-item > label > input,
@@ -60,7 +60,7 @@
 
 .context-menu-item.hover {
     cursor: pointer;
-    background-color: #39F;
+    background-color: #d3e5f2;
 }
 
 .context-menu-item.disabled {
