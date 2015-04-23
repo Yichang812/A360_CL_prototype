@@ -2,13 +2,12 @@
 words:      #333
 background: #eee
 border:     #d5d5d5
-blue:       #217cbc
-light blue: #d3e5f2
+dark blue:  #116fb8
+light blue: #9edcf9
 */
 
 body {
-  background: url(../images/Editor_notop_newicons.png);
-  background-repeat: no-repeat;
+	background: url(../images/Editor_notop_newicons.png) no-repeat;
 	font-family: Helvetica, Arial, sans-serif;
 	color: #333;
 }
@@ -101,7 +100,7 @@ a {
 /*-----side menu------*/
 .side-menu{
 	display: none;
-  width:181px;
+  	width:202px;
 	height: auto;
 	background-color:white;
 	position: absolute;
@@ -109,7 +108,7 @@ a {
 	z-index: 2;
 }
 .side-menu-title{
-  color:#d5d5d5;
+	color:#d5d5d5;
 	font-size:9px;
 	padding: 5px auto auto 5px;
 
@@ -122,10 +121,10 @@ a {
 	font-size: 12px;
 }
 .side-menu a:hover{
-	background-color: #d3e5f2;
+	background-color: #9edcf9;
 }
 .side-menu a:active{
-	background-color: #217cbc;
+	background-color: #116fb8;
 }
 
 /*display-area*/
@@ -145,20 +144,17 @@ a {
   top:4px;
   left:17px
 }
-
 .icon{
   font-size: 12px;
 	position: absolute;
 	top: 3px;
 }
-.icon:hover{
-	color:#217cbc;
-}
-
 #menuIcon{
   left:3px;
 }
-
+#menuIcon:hover{
+	color:#116fb8;
+}
 .block-thumbnail{
 	height: 68px;
 	margin:2px;
@@ -186,17 +182,24 @@ a {
 	/*z-index: 2;*/
 }
 .search-bar:hover{
-	background-color:#d3e5f2;
+	background-color:#116fb8;
 }
-
+.search-bar:hover #searchIcon{
+	color:white;
+}
+#searchIcon{
+	left:5px;
+}
+#closeIcon{
+	right:5px;
+}
 .search-box{
 	width:160px;
 	position: absolute;
 	left: 25px;
 	background-color: transparent;
 	border:0px;
-	border-bottom:1px solid #217cbc;
-
+	border-bottom:1px solid #9edcf9;
 }
 .search-box:focus{
 	outline: none;
@@ -227,9 +230,4 @@ a {
    font-size: 12px;
    padding-top: 3px;
 }
-#searchIcon{
-  left:5px;
-}
-#closeIcon{
-	right:5px;
-}
+
