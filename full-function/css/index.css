@@ -3,7 +3,7 @@ words:      #333
 background: #eee
 border:     #d5d5d5
 dark blue:  #116fb8
-light blue: #9edcf9
+light blue: rgba(17,111,184,0.4
 */
 
 body {
@@ -118,7 +118,7 @@ a {
 	font-size: 12px;
 }
 .side-menu a:hover{
-	background-color: #9edcf9;
+	background-color: rgba(17,111,184,0.4);
 }
 .side-menu a:active{
 	background-color: #116fb8;
@@ -189,7 +189,7 @@ a {
 	left: 25px;
 	background-color: transparent;
 	border:0px;
-	border-bottom:1px solid #9edcf9;
+	border-bottom:1px solid rgba(17,111,184,0.4);
 }
 .search-box:focus{
 	outline: none;
