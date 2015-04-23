@@ -14,9 +14,6 @@ body {
 a {
 	text-decoration: none;
 }
-.v-middle{
-	vertical-align: middle;
-}
 
 .box-shadow-1 {
 	-webkit-box-shadow: 0px 2px 1px 0px rgba(0,0,0,0.4);
@@ -142,18 +139,19 @@ a {
   font-size: 12px;
   position: absolute;
   top:4px;
-  left:17px
+  left:20px
 }
 .icon{
-  font-size: 12px;
+  	font-size: 12px;
 	position: absolute;
-	top: 3px;
+    padding:3px 0;
+	height:14px;
+	width:20px;
+    text-align:center;
 }
-#menuIcon{
-  left:3px;
-}
-#menuIcon:hover{
-	color:#116fb8;
+.icon:hover{
+	background-color:#116fb8;
+    color:white;
 }
 .block-thumbnail{
 	height: 68px;
@@ -179,18 +177,10 @@ a {
 	background-color:white;
 	position: absolute;
 	left:181px;
-	/*z-index: 2;*/
 }
-.search-bar:hover{
-	background-color:#116fb8;
-}
-.search-bar:hover #searchIcon{
-	color:white;
-}
-#searchIcon{
-	left:5px;
-}
+
 #closeIcon{
+    color:white;
 	right:5px;
 }
 .search-box{
@@ -204,7 +194,10 @@ a {
 .search-box:focus{
 	outline: none;
 	border:0px;
-	border-bottom:1px solid white;
+	border-bottom:1px solid #116fb8;
+}
+.search-box:focus+#closeIcon{
+    color:#116fb8;
 }
 
 ::-webkit-input-placeholder {

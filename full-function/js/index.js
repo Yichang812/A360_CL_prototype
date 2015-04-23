@@ -2,28 +2,31 @@ $(document).ready(function(){
 
 //the search bar slide left or back while clicking search icon
 	$('#searchIcon , #closeIcon').click(function(){
-		//if search bar is not visible, show it
+		//if search bar is not visible, slide left and change its style
 		if($('.search-bar').position().left !== 0) {
-			$('.search-bar').animate({left:'0',backgroundColor:'#116fb8'},200);
-			$('#searchIcon , #closeIcon').animate({color:'white'},200);
+			$('.search-bar').animate({left:'0'},200);
+			$('#searchIcon').animate({color:'white',backgroundColor:'#116fb8'},200);
+
 		}else{
-			$('.search-bar').animate({left:'181',backgroundColor:'white'},200);
-			$('#searchIcon , #closeIcon').animate({color:'#333'},200);
+			$('.search-bar').animate({left:'181'},200);
+			$('#searchIcon').animate({color:'#333',backgroundColor:'white'},200);
 		}
 	});
 
-	$('.search-bar').hover(
+	$('#searchIcon').hover(
 		//the function works only when the search bar is not visible
 		function() {
 			if($('.search-bar').position().left !== 0){
 				$(this).css('backgroundColor', '#116fb8');
-				$('#searchIcon').css('color', 'white');
+				$(this).css('color', 'white');
+			}else{
+				$('#closeIcon').css('backgroundColor','white');
 			}
 		},
 		function(){
 			if($('.search-bar').position().left !== 0){
 				$(this).css('backgroundColor', 'white');
-				$('#searchIcon').css('color', '#333');
+				$(this).css('color', '#333');
 			}
 		});
 
